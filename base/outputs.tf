@@ -14,4 +14,4 @@ output "secret_names" {
     github_actions_organization_secret.org_password.secret_name,
   ]
 }
-output "base_repository_name" { value = github_repository.tf_github_lab_base_repository.name }
+output "base_repository_name" { value = github_repository.tf_github_lab_devops_repository.name }
