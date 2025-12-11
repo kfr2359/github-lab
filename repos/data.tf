@@ -1,7 +1,6 @@
-data "terraform_remote_state" "base" {
-  backend = "pg"
-
-  config = {
-    conn_str = "postgres://tfstate:aA123456@localhost/base?sslmode=disable"
-  }
+data "github_organization" "my_org" {
+  name         = var.gh_org_name
+  summary_only = true
 }
+
+data "github_organization_teams" "all" {}
